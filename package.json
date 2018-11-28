@@ -1,0 +1,28 @@
+{
+  "name": "rss-feed-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode=production"
+  },
+  "author": "ryoto7ishikawa",
+  "prettier": {
+    "singleQuote": true
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/google-apps-script": "0.0.32",
+    "gas-webpack-plugin": "^0.3.0",
+    "prettier": "^1.15.2",
+    "ts-loader": "^5.3.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

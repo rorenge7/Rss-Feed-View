@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>購読中のRSSフィード</title>
+    <base target="_top" />
+    <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+  </head>
+
+  <body>
+    <h1>購読中のRSSフィード</h1>
+
+    <? var data = getFeedInfo(); ?>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <tr>
+          <th>タイトル</th>
+          <th>URL</th>
+          <th>最終更新日時</th>
+        </tr>
+        <?
+          for(var i = 0, l = data.length; i < l; i++) { output.append('<tr>');
+            output.append('<td>' + data[i].name + '</td>');
+            output.append('<td>' + data[i].url + '</td>');
+            output.append('<td>' + data[i].date.toString() + '</td>');
+          output.append('</tr>');
+        }
+        ?>
+      </table>
+    </div>
+    <?!= HtmlService.createHtmlOutputFromFile('js').getContent(); ?>
+  </body>
+</html>

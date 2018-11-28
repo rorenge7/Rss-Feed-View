@@ -1,0 +1,4 @@
+node_modules
+.env
+.clasp.json
+dest/main.gs
